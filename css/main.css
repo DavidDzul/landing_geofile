@@ -1,30 +1,13 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Framework styles:
-   ========================================================================== */
 @import 'bulma/css/bulma.css';
 @import "@mdi/font/scss/materialdesignicons.scss";
-
-/* ==========================================================================
-    Typography:
-    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
 
 /* BASE STYLES */
 :root {
     --orange: #FD8026;
     --white: #fff;
-    --gray: #6B6B6B;
+    --gray: #6a6e76;
     --gray-lite: #F9F9F9;
 }
 
@@ -34,8 +17,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 16px;
-    letter-spacing: .2px;
+    font-size: 14.5px;
 }
 
 p {
@@ -65,68 +47,6 @@ h5 {
 small {
     font-size: 0.9rem;
     font-weight: bold;
-
-}
-
-.btn-learnmore {
-    color: var(--gray);
-    font-weight: bold;
-    border: 2px solid var(--orange);
-    width: 150px;
-    margin-top: -10px;
-}
-
-.mdi-arrow-down {
-    font-size: 30px;
-    margin-top: -20px;
-    margin-bottom: -10px;
-    color: var(--gray);
-}
-
-section {
-    width: 100%;
-    min-height: calc(100vh - (110vw/-12));
-}
-
-.section-container .bg-business {
-    position: relative;
-    margin-top: calc(100vw/-12);
-    padding-top: calc(100vw/12);
-    min-height: 100vh;
-    align-items: baseline;
-}
-
-.content-business {
-    margin-top: -130px;
-}
-
-.prices-geofile {
-    margin-top: -100px;
-    margin-bottom: -160px;
-}
-
-.carousel-section {
-    margin-bottom: 190px;
-}
-
-section:last-child {
-    position: relative;
-    margin-top: calc(100vw/-12);
-    padding-top: calc(100vw/12);
-    min-height: 100vh;
-    z-index: -1;
-}
-
-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
 }
 
 .is-desk {
@@ -170,7 +90,151 @@ section {
     justify-content: center;
 }
 
+.mdi-left {
+    transform: rotateZ(-90deg);
+}
+
+.mdi-right {
+    transform: rotateZ(90deg);
+}
+
+
+/* SECTIONS */
+header .hero {
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/geofile_hero.png);
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+    border-top-color: var(--orange);
+    margin: -1px 0px 0px 0px;
+
+}
+
+/* .hero p {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       font-size: 3em;
+   } */
+
+/* header .hero .scroll {
+       position: absolute;
+       bottom: 20px;
+       left: 50%;
+       transform: translateX(-50%);
+       text-align: center;
+       font-size: 0.7em;
+   } */
+
+/* header .hero .scroll:hover {
+       bottom: 17px;
+       cursor: pointer;
+   }
+   
+   header .hero .scroll:hover span {
+       font-size: 1.3em;
+       margin-top: 7px;
+   }
+   
+   header .hero .scroll span {
+       font-size: 1.2em;
+       margin-top: 5px;
+   } */
+
+main section .columns {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    /* background-attachment: fixed; */
+}
+
+main .carousel-section {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: calc(auto/-12);
+    padding-top: calc(auto/12);
+    min-height: calc(auto - (110vw/-12));
+    /* background-attachment: fixed; */
+}
+
+main .bg-satelite {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/bg-satelite.png');
+    background-size: 100% 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main .bg-satelite .container {
+    top: 30%;
+}
+
+main .bg-business {
+    height: 80vh;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main .bg-business .container {
+    top: 10%;
+}
+
+main .prices-geofile {
+    height: auto;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main .prices-geofile .container {
+    top: 10%;
+}
+
+main .contact-geofile {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main section:nth-of-type(1) {
+    background-color: var(--gray-lite);
+}
+
+main section:nth-of-type(2) {
+    background-color: var(--gray-lite);
+}
+
+main section:nth-of-type(3) {
+    background-color: var(--orange);
+}
+
+main section:nth-of-type(4) {
+    background-color: var(--white);
+}
+
+main section:nth-of-type(5) {
+    background-color: var(--gray-lite);
+}
+
 /* NAVBAR */
+
 .navbar {
     background-color: var(--orange);
     border-style: solid;
@@ -192,20 +256,8 @@ section {
     font-size: 20px;
 }
 
+
 /* HEADER */
-.hero {
-    background-image: url(../img/geofile_hero.png);
-    background-size: 100% 68%;
-    /* background-attachment: fixed; */
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    color: var(--white);
-    min-height: 40%;
-    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    border-top-color: var(--orange);
-    margin: -1px 0px 0px 0px;
-    /* position: relative; */
-}
 
 .hero-body h1 {
     /* font-size: 2.7rem; */
@@ -218,7 +270,6 @@ section {
     border-radius: 2px;
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 .hero-body h2 {
@@ -242,22 +293,47 @@ section {
     margin: -15px 0px 0px 0px;
 }
 
+.business-line {
+    background-color: var(--white);
+    width: 5%;
+    height: 5px;
+    margin: -15px 0px 0px 0px;
+}
+
 .is-sub-column {
     margin: -30px 0px 0px 0px;
 }
 
+.btn-learnmore {
+    color: var(--gray);
+    font-weight: bold;
+    border: 2px solid var(--orange);
+    margin-top: -15px;
+}
+
+.mdi-arrow-down {
+    font-size: 30px;
+    margin-top: -15px;
+}
+
 /* DEVICE IMAGE */
+
 .is-image-device {
-    margin-top: 0%;
+    margin-top: -1%;
 }
 
 .is-image-device img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 450px;
+    max-height: 450px;
     object-fit: contain;
 }
 
+
 /* SECTION CAROUSEL */
+.carousel-column {
+    width: 100%;
+}
+
 .content-gray {
     background-color: var(--gray-lite);
 }
@@ -328,7 +404,6 @@ section {
     padding-top: 30px;
 }
 
-
 /* PRICES */
 .dl-margin {
     margin-top: -6px;
@@ -346,70 +421,46 @@ section {
     padding-right: 15px;
 }
 
-.mdi-left {
-    transform: rotateZ(-90deg);
+/* FOOTER */
+
+.mdi-orange {
+    color: var(--orange);
 }
 
-.mdi-right {
-    transform: rotateZ(90deg);
+.mdi-facebook {
+    font-size: 30px;
 }
 
+.mdi-instagram {
+    font-size: 30px;
+}
 
-/* COLORS AND OTHER STYLES TO ILLUSTRATE SECTIONS */
-section:nth-child(3) {
+.mdi-youtube {
+    font-size: 30px;
+}
 
-    background-image: url(../img/bg-satelite.png);
-    background-size: 100% 100%;
-    /* background-attachment: fixed; */
-    background-size: cover;
-    background-repeat: no-repeat;
+.btn-contac {
+    background-color: var(--gray);
     color: var(--white);
-    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
 }
 
-section:nth-child(4) {
+.footer {
+    padding: 1rem 1rem;
     background-color: var(--orange);
+    color: var(--white);
 }
 
-section:nth-child(5) {
-    background-color: var(--white);
+.footer-column {
+    margin: 0%;
 }
 
-section:nth-child(6) {
-    background-color: var(--white);
-}
-
-section:nth-child(7) {
-    background-color: var(--gray-lite);
-}
-
-.owl-carousel .item {
-    height: 10rem;
-    width: auto;
-}
-
-.owl-stage-outer {
-    height: 35rem;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-    width: 210px;
-}
-
-
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
     html,
     body {
         font-size: 12px;
-    }
-
-    .is-image-device img {
-        max-width: 300px;
-        max-height: 300px;
-        object-fit: contain;
+        margin: 0%;
+        padding: 0%;
     }
 
     .is-desk {
@@ -428,32 +479,47 @@ section:nth-child(7) {
         display: block;
     }
 
-    .hero {
-        height: 60%;
+    header .hero {
+        height: 100vh;
+        position: relative;
         background-image: url(../img/geofile_hero_mobil.png);
+        background-size: 100% 60%;
+        background-repeat: no-repeat;
+        border-top-color: var(--orange);
+        margin: -1px 0px 0px 0px;
     }
 
-    .hero-line {
+    header .hero-line {
         width: 10%;
         margin: -15px 0px 0px 0px;
     }
 
-    .is-sub-column {
+    header .is-sub-column {
         margin: -20px 0px 0px 0px;
     }
 
-    .btn-lg {
+    header .btn-lg {
         color: var(--white);
         background-color: var(--orange);
         border-radius: 2px;
         width: 150px;
-        font-size: 12px;
         border-color: var(--orange);
     }
 
-    .content-carousel {
+    header .is-image-device img {
+        padding-top: 15px;
+        max-width: 350px;
+        max-height: 350px;
+        object-fit: contain;
+    }
+
+    main .bg-satelite {
+        background-image: url('../img/bg-satelite-mobil.png');
+    }
+
+    .carousel-column {
         background-color: var(--orange);
-        margin-top: 25px;
+        margin-left: .1px;
     }
 
     .img-carousel {
@@ -468,55 +534,10 @@ section:nth-child(7) {
 
     .column-body-mobil {
         margin: 0px 0px 0px 0px;
-        /* width: 400px; */
     }
 
-    section:nth-child(3) {
-        background-image: url(../img/bg-satelite-mobil.png);
+    .footer-column {
+        margin: 0px -15px 0px 10px;
     }
 
-    .prices-geofile {
-        margin-bottom: -100px;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .is-info-desk {
-        display: block;
-    }
-
-    .is--info-mobil {
-        display: none;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1800px) {
-
-    html,
-    body {
-        font-size: 20px;
-    }
-
-    .is-image-device img {
-        max-width: 600px;
-        max-height: 600px;
-        object-fit: contain;
-    }
-
-    .btn-learnmore {
-        color: var(--gray);
-        font-weight: bold;
-        border-color: var(--orange);
-        width: 230px;
-    }
-
-    .is-info-desk {
-        display: block;
-    }
-
-    .is--info-mobil {
-        display: none;
-    }
 }
