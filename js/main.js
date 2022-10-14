@@ -9,15 +9,15 @@ ShowSlide = (index) => {
   if (index == slides.length)
     slideIndex = 0;
   else if (index < 0)
-    slideIndex = slides.length-1;
+    slideIndex = slides.length - 1;
   else
     slideIndex = index;
-  
-  for (i=0; i< slides.length; i++) {
+
+  for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
     pills[i].classList.remove("active");
   }
-  
+
   SlideReset();
   slides[slideIndex].style.display = "block";
   pills[slideIndex].classList.add("active");
@@ -25,30 +25,30 @@ ShowSlide = (index) => {
 
 SlideReset = () => {
   window.clearInterval(slideTimer);
-  
+
   bar[0].style.animation = null;
-  
-  setTimeout(function(){
-    bar[0].style.animation = "progression linear " + (slideDelay-.11) + "s";
-  
-    slideTimer = window.setInterval(function(){
-      ShowSlide(slideIndex+=1);
-    }, slideDelay*1000);
-  },10);
+
+  setTimeout(function () {
+    bar[0].style.animation = "progression linear " + (slideDelay - .11) + "s";
+
+    slideTimer = window.setInterval(function () {
+      ShowSlide(slideIndex += 1);
+    }, slideDelay * 1000);
+  }, 10);
 }
 
-for (i=0;i<pills.length;i++) {
-  pills[i].addEventListener("click", function(){
+for (i = 0; i < pills.length; i++) {
+  pills[i].addEventListener("click", function () {
     let si = this.getAttribute("data-index");
     ShowSlide(Number(si));
   })
 };
 
-neg.addEventListener("click", function(){
-  ShowSlide(slideIndex-=1);
+neg.addEventListener("click", function () {
+  ShowSlide(slideIndex -= 1);
 });
-pos.addEventListener("click", function(){
-  ShowSlide(slideIndex+=1);
+pos.addEventListener("click", function () {
+  ShowSlide(slideIndex += 1);
 });
 
 ShowSlide(slideIndex);

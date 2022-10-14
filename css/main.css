@@ -1,7 +1,6 @@
 @import 'bulma/css/bulma.css';
 @import "@mdi/font/scss/materialdesignicons.scss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /* BASE STYLES */
 :root {
@@ -100,15 +99,32 @@ small {
 
 
 /* SECTIONS */
+
+
+
 header .hero {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background-image: url(../img/geofile_hero.png);
     background-size: 100% 70%;
     background-repeat: no-repeat;
     border-top-color: var(--orange);
     margin: -1px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+header section .hero-body {
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
 }
 
 /* .hero p {
@@ -158,9 +174,9 @@ main .carousel-section {
     justify-content: center;
     text-align: center;
 
-    margin-top: calc(auto/-12);
+    /* margin-top: calc(auto/-12);
     padding-top: calc(auto/12);
-    min-height: calc(auto - (110vw/-12));
+    min-height: calc(auto - (110vw/-12)); */
     /* background-attachment: fixed; */
 }
 
@@ -189,7 +205,7 @@ main .bg-business {
 }
 
 main .bg-business .container {
-    top: 10%;
+    top: 8%;
 }
 
 main .prices-geofile {
@@ -313,8 +329,16 @@ main section:nth-of-type(5) {
 
 .mdi-arrow-down {
     font-size: 30px;
-    margin-top: -15px;
+    margin-top: -5px;
+    animation: bounce 1600ms infinite cubic-bezier(0.145, 0.05, 0.15, 0.15);
 }
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
 
 /* DEVICE IMAGE */
 
@@ -391,6 +415,23 @@ main section:nth-of-type(5) {
     color: var(--white);
 }
 
+
+/* SATELITE */
+
+.transition-content-area {
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+
 /* BUSINESS */
 
 .image .img-business {
@@ -452,6 +493,12 @@ main section:nth-of-type(5) {
 
 .footer-column {
     margin: 0%;
+}
+
+/*  */
+
+.fade {
+    opacity: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -540,4 +587,16 @@ main section:nth-of-type(5) {
         margin: 0px -15px 0px 10px;
     }
 
+}
+
+@media (print),
+(prefers-reduced-motion: reduce) {
+    .animated {
+        -webkit-animation-duration: 1ms !important;
+        animation-duration: 1ms !important;
+        -webkit-transition-duration: 1ms !important;
+        transition-duration: 1ms !important;
+        -webkit-animation-iteration-count: 1 !important;
+        animation-iteration-count: 1 !important;
+    }
 }

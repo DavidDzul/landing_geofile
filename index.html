@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Geofile MX</title>
+    <link rel="shortcut icon" href="img/logos/lg-geofile.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/slider.css">
-
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -18,6 +18,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
 
 </head>
 
@@ -32,7 +34,7 @@
             <div id="navbarDesktop" class="navbar-menu">
                 <div class="navbar-end">
                     <div class="navbar-item">
-                        <div class="buttons">
+                        <div class="buttons animated infinite bounceInLeft">
                             <a class="button btn-lg is-outlined">
                                 <p> ¡Quiero una <b> demo!</b>
                                 </p>
@@ -91,7 +93,7 @@
                 </div>
                 <div class="columns">
                     <div class="column is-mobile is-center">
-                        <button class="button is-rounded btn-learnmore">¡Conoce más!</button>
+                        <a href="#main" class="button is-rounded btn-learnmore" id="btn-click ">¡Conoce más!</a>
                     </div>
                 </div>
                 <div class="columns">
@@ -106,8 +108,8 @@
     <main class="section-container">
         <section class="carousel-section">
             <div class="container has-text-centered">
-                <div class="columns is-desktop pt-5">
-                    <div class="column">
+                <div class="columns is-desktop pt-5 pb-4">
+                    <div class="column" id="main">
                         <h2 class="pb-2"> <strong class="txt-gray">¿Por qué</strong> <strong
                                 class="txt-normal">utilizar</strong>
                             <strong class="txt-orange">GeoFile?</strong>
@@ -237,14 +239,14 @@
             </div>
         </section>
         <section class="bg-satelite pt-6">
-            <div class="container has-text-centered">
+            <div class="container has-text-centered fade">
                 <h1 class="has-text-weight-medium txt-white">La única plataforma</h1>
                 <h1 class="txt-orange has-text-weight-bold">de administración de terrenos</h1>
                 <h1 class="has-text-weight-medium txt-white">creada por expertos y para expertos</h1>
             </div>
         </section>
         <section class="bg-business">
-            <div class="container content-business is-fullhd p-5">
+            <div class="container content-business is-fullhd fade">
                 <div class="columns has-text-centered">
                     <div class="column is-12">
                         <h2 class="txt-white">Ellos ya tienen <br class="is-mobil"> <strong class="txt-white">el control
