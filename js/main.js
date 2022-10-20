@@ -52,3 +52,19 @@ pos.addEventListener("click", function () {
 });
 
 ShowSlide(slideIndex);
+
+
+var arrowBounce = function () {
+  var arrow = $(".mdi-arrow-down ");
+
+  if (arrow.hasClass("lift")) {
+    arrow.removeClass("lift");
+  } else {
+    arrow.addClass("lift");
+  }
+};
+
+// run the arrowBounce function every 800ms
+setInterval(arrowBounce, 800);
+
+

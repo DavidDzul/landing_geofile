@@ -5,30 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geofile MX</title>
-    <link rel="shortcut icon" href="img/logos/lg-geofile.png">
+    <title>GEOFILE </title>
+    <link rel="shortcut icon" href="img/icon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/slider.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
-
 </head>
 
 <body>
     <nav class="navbar is-sticky-top navigation" role="navigation" aria-label="main navigation">
         <div class="container has-text-centered pl-4 pr-4">
             <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
-                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+                <a class="navbar-item" href="#">
+                    <img class="navbar-logo" src="img/geofile-logo-blanco.png" />
                 </a>
             </div>
             <div id="navbarDesktop" class="navbar-menu">
@@ -52,7 +50,7 @@
     <header>
         <section class="hero">
             <div class="hero-body">
-                <div class="columns has-text-centered pt-1">
+                <div class="columns has-text-centered">
                     <div class="column is-full">
                         <h1 class="hero-first-title">Toda la información de tus terrenos</h1>
                         <h2 class="hero-second-title">al alcance de un clic</h2>
@@ -84,9 +82,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="columns is-mobile is-center is-image-device">
+                <div class="columns is-image-device">
                     <div class="column is-center">
-                        <figure class="image is-image-devices">
+                        <figure class="image">
                             <img src="img/devices.png">
                         </figure>
                     </div>
@@ -96,7 +94,7 @@
                         <a href="#main" class="button is-rounded btn-learnmore" id="btn-click ">¡Conoce más!</a>
                     </div>
                 </div>
-                <div class="columns">
+                <div class="columns bounce">
                     <div class="column is-mobile is-center">
                         <span class="mdi mdi-arrow-down"></span>
                     </div>
@@ -108,7 +106,7 @@
     <main class="section-container">
         <section class="carousel-section">
             <div class="container has-text-centered">
-                <div class="columns is-desktop pt-5 pb-4">
+                <div class="columns is-desktop pt-5 pb-5">
                     <div class="column" id="main">
                         <h2 class="pb-2"> <strong class="txt-gray">¿Por qué</strong> <strong
                                 class="txt-normal">utilizar</strong>
@@ -121,25 +119,25 @@
                         </h4>
                     </div>
                 </div>
-                <div class="columns is-gapless is-multiline is-mobile">
+                <div class="columns is-gapless is-multiline is-mobile pb-6">
                     <div class="column is-one-third is-center">
                         <figure class="image pill" data-index="0">
-                            <img class="img-active pl-3" src="img/administra.png">
-                            <small class="is-center pt-4 pb-2">Administra</small>
+                            <img class="img-active" src="img/administra.png">
+                            <small class="is-center pt-4 pb-2 txt-icon-carousel">Administra</small>
                             <hr class="indicator">
                         </figure>
                     </div>
                     <div class="column is-one-third is-center">
                         <figure class="image pill" data-index="1">
                             <img class="img-active" src="img/comparte.png">
-                            <small class="is-center pt-4 pb-2">Comparte</small>
+                            <small class="is-center pt-4 pb-2 txt-icon-carousel">Comparte</small>
                             <hr class="indicator">
                         </figure>
                     </div>
                     <div class="column is-one-third is-center">
                         <figure class="image pill" data-index="2">
                             <img class="img-active" src="img/monitorea.png">
-                            <small class="is-center pt-4 pb-2">Monitorea</small>
+                            <small class="is-center pt-4 pb-2 txt-icon-carousel">Monitorea</small>
                             <hr class="indicator">
                         </figure>
                     </div>
@@ -147,8 +145,9 @@
                         <div class="progress"></div>
                     </div>
                 </div>
+                <div class="columns"><br class="is-full-hd"></div>
                 <!-- <div class="columns is-desketop" style="width: auto;"> -->
-                <div class="columns is-desketop carousel-column">
+                <div class="columns is-desketop carousel-column pb-6">
                     <div class="column carousel-content is-12-mobile is-10-desktop is-offset-1-desktop">
                         <div class="slideshow-container">
                             <div class="slide">
@@ -162,7 +161,7 @@
                                     <div class="column">
                                         <img class="img-carousel" src="img/bg-administra.png" />
                                     </div>
-                                    <div class="column column-body-mobil info-left-carousel">
+                                    <div class="column column-body-mobil info-left-carousel vertical-align">
                                         <h3 class="is-info-desk">Administra tu información y <strong class="txt-white">
                                                 accede en cualquier momento
                                             </strong>
@@ -184,7 +183,7 @@
                             </div>
                             <div class="slide">
                                 <div class="columns">
-                                    <div class="column column-title-mobil info-right-carousel">
+                                    <div class="column column-title-mobil info-right-carousel vertical-align">
                                         <h3> <strong class="txt-white">Comparte</strong> la infromación
                                             que quieras con quien
                                             tu quieras.</h3>
@@ -217,7 +216,7 @@
                                     <div class="column">
                                         <img class="img-carousel" src="img/bg-monitorea.png" />
                                     </div>
-                                    <div class="column info-left-carousel column-body-mobil">
+                                    <div class="column info-left-carousel column-body-mobil vertical-align">
                                         <h3 class=" is-info-desk">
                                             <strong class="txt-white">Monitoreo satelital</strong>
                                             y reportes.
@@ -260,7 +259,7 @@
                         <hr class="business-line">
                     </div>
                 </div>
-                <div class="columns is-gapless is-multiline p-6 is-desk">
+                <div class="columns pt-3 is-desk">
                     <div class="column is-3 is-center">
                         <figure class="image">
                             <img class="img-business" src="img/logos/lg-desur.png">
@@ -281,6 +280,8 @@
                             <img class="img-business" src="img/logos/lg-simca.png">
                         </figure>
                     </div>
+                </div>
+                <div class="columns pb-6 is-desk">
                     <div class="column is-6 is-center">
                         <figure class="image">
                             <img class="img-business-second" src="img/logos/ls-orrisa.png">
@@ -292,26 +293,28 @@
                         </figure>
                     </div>
                 </div>
-                <div class="column is-12 is-mobil">
-                    <div class="section-price">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item p-5">
-                                <img class="" src="img/logos/lg-desur.png" alt="" title="">
-                            </div>
-                            <div class="item">
-                                <img class="" src="img/logos/lg-ordaz.png" alt="" title="">
-                            </div>
-                            <div class="item">
-                                <img class="" src="img/logos/lg-haciendas.png" alt="" title="">
-                            </div>
-                            <div class="item">
-                                <img class="" src="img/logos/lg-simca.png" alt="" title="">
-                            </div>
-                            <div class="item">
-                                <img class="" src="img/logos/ls-orrisa.png" alt="" title="">
-                            </div>
-                            <div class="item">
-                                <img class="" src="img/logos/lg-geoland.png" alt="" title="">
+                <div class="columns">
+                    <div class="column is-12 is-mobil">
+                        <div class="section-img-business">
+                            <div class="owl-carousel owl-theme item-mobil">
+                                <div class="item p-5">
+                                    <img class="img-business-mobil" src="img/logos/lg-desur.png" alt="" title="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-business-mobil" src="img/logos/lg-ordaz.png" alt="" title="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-business-mobil" src="img/logos/lg-haciendas.png" alt="" title="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-business-mobil" src="img/logos/lg-simca.png" alt="" title="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-business-mobil" src="img/logos/ls-orrisa.png" alt="" title="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-business-mobil" src="img/logos/lg-geoland.png" alt="" title="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -322,12 +325,12 @@
             <div class="container is-fullhd p-6">
                 <div class="columns has-text-centered">
                     <div class="column is-6">
-                        <h1 class="txt-orange has-text-weight-bold">+1000 lotes</h1>
-                        <h3 class="has-text-weight-medium">registrados y</h3>
+                        <h1 class="txt-orange has-text-weight-bold count-digit">+1000</h1>
+                        <h3 class="has-text-weight-medium">lotes registrados y</h3>
                         <h3 class="has-text-weight-medium">protegidos.</h3>
                     </div>
                     <div class="column is-6">
-                        <h1 class="txt-orange has-text-weight-bold">+700</h1>
+                        <h1 class="txt-orange has-text-weight-bold count-digit">+700</h1>
                         <h3 class="has-text-weight-medium">invasiones</h3>
                         <h3 class="has-text-weight-medium">detectadas.</h3>
                     </div>
@@ -340,7 +343,8 @@
                     </div>
                 </div>
                 <div class="columns pb-6 price-column">
-                    <div class="column is-full-mobile is-four-fifths-tablet is-10-desktop is-offset-1">
+                    <div
+                        class="column is-full-mobile is-offset-0-mobile is-four-fifths-tablet is-offset-0-tablet is-10-desktop is-offset-1-desktop is-10-widescreen is-offset-1-widescreen is-full-fullhd is-offset-0-fullhd">
                         <div class="section-price">
                             <div class="owl-carousel owl-theme">
                                 <div class="item p-5">
@@ -377,7 +381,7 @@
             <div class="container p-6">
                 <div class="columns is-12 is-variable">
                     <div class="column is-6 has-text-left p-6">
-                        <img class="pb-5" src="img/logos/lg-geofile.png" width="110" />
+                        <img class="pb-5 footer-image" src="img/logos/lg-geofile.png" width="110" />
                         <h3 class="pb-4">Contacto</h3>
                         <p class="pb-1"><span class="mdi mdi-orange mdi-phone"></span>
                             981 118 6022</p>
@@ -448,7 +452,6 @@
         </div>
     </footer>
 
-
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -458,6 +461,7 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/counter.js"></script>
 
 </body>
 

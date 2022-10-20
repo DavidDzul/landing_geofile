@@ -102,8 +102,8 @@ small {
 header {
     /* min-height: 638px; */
     /* min-height: 100vh; */
-    min-height: 100vh;
-    /* max-height: 640px; */
+    min-height: 95vh;
+    max-height: 640px;
     position: relative;
     background-image: url(../img/geofile_hero.png);
     background-size: 100% 70%;
@@ -130,7 +130,7 @@ header {
 
 header .hero {
     position: relative;
-    height: 100%;
+    height: 95%;
 }
 
 
@@ -211,7 +211,7 @@ main .bg-satelite .container {
 }
 
 main .bg-business {
-    height: fit-content;
+    height: 80vh;
     width: 100%;
     flex-direction: column;
     align-content: center;
@@ -220,8 +220,7 @@ main .bg-business {
 }
 
 main .bg-business .container {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    top: 8%;
 }
 
 main .prices-geofile {
@@ -414,7 +413,7 @@ main section:nth-of-type(5) {
 } */
 
 header .is-image-device figure {
-    width: 32rem;
+    width: auto;
     height: auto;
     object-fit: contain;
 }
@@ -606,8 +605,8 @@ header .is-image-device figure {
     header {
         /* min-height: 638px; */
         /* min-height: 100vh; */
-        min-height: 95vh;
-        /* max-height: 640px; */
+        min-height: 90vh;
+        max-height: 640px;
         position: relative;
         background-image: url(../img/geofile_hero_mobil.png);
         background-size: 100% 70%;
@@ -665,30 +664,9 @@ header .is-image-device figure {
     }
 
     header .is-image-device img {
-        max-width: 23rem;
-        max-height: 23rem;
+        max-width: 350px;
+        max-height: 350px;
         object-fit: contain;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .mdi-arrow-down {
-        font-size: 30px;
-        /* margin: 15px; */
-        white-space: nowrap;
-        position: absolute;
-        /* margin: auto; */
-        transform: translateY(0);
-        -webkit-transition: all 500ms ease-in-out;
-        -moz-transition: all 750ms ease-in-out;
-        -ms-transition: all 750ms ease-in-out;
-        -o-transition: all 750ms ease-in-out;
-        transition: all 750ms ease-in-out;
-    }
-
-    .lift {
-        transform: translateY(14px);
     }
 
     main .bg-satelite {
@@ -722,11 +700,11 @@ header .is-image-device figure {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) and (min-width: 720px) {
+@media only screen and (min-width: 768px) {
 
     html,
     body {
-        font-size: 12px;
+        font-size: 14px;
         margin: 0%;
         padding: 0%;
     }
@@ -747,22 +725,11 @@ header .is-image-device figure {
         display: none;
     }
 
-    header .is-image-device img {
-        max-width: 32rem;
-        max-height: 32rem;
-        object-fit: contain;
-    }
-
-    .image .img-business {
-        width: 10rem;
-        height: auto;
-        margin-top: -3rem;
-    }
-
-    .image .img-business-second {
-        width: 15rem;
-        height: auto;
-        padding-top: 5rem;
+    header .btn-lg {
+        color: var(--orange);
+        border-radius: 0;
+        width: auto;
+        border-radius: 2px;
     }
 }
 
@@ -790,22 +757,11 @@ header .is-image-device figure {
         display: none;
     }
 
-    header .is-image-device img {
-        max-width: 32rem;
-        max-height: 32rem;
-        object-fit: contain;
-    }
-
-    .image .img-business {
-        width: 10rem;
-        height: auto;
-        margin-top: -3rem;
-    }
-
-    .image .img-business-second {
-        width: 15rem;
-        height: auto;
-        padding-top: 5rem;
+    header .btn-lg {
+        color: var(--orange);
+        border-radius: 0;
+        width: auto;
+        border-radius: 2px;
     }
 
     /* header .is-image-device img {
@@ -823,11 +779,11 @@ header .is-image-device figure {
         font-size: 14.5px;
     }
 
-    header {
-        min-height: 95vh;
-        background-image: url(../img/geofile_hero.png);
-        background-size: 100% 70%;
-        margin: -1px 0px 0px 0px;
+    header .btn-lg {
+        color: var(--orange);
+        border-radius: 0;
+        width: auto;
+        border-radius: 2px;
     }
 
     header .is-image-device img {
@@ -849,160 +805,13 @@ header .is-image-device figure {
     }
 }
 
-@media only screen and (min-width: 1400px) {
-
-    html,
-    body {
-        /* font-size: calc(8px + 6 * ((100vw - 320px) / 680)); */
-        font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-    }
-
-    .navbar-logo {
-        width: 80%;
-        height: auto;
-    }
-
-    .container:not(.is-max-desktop):not(.is-max-widescreen) {
-        max-width: 80%;
-    }
-
-    .mdi-account-outline {
-        font-size: 100%;
-    }
-
-    header {
-        min-height: 100vh;
-        background-image: url(../img/geofile_hero.png);
-        background-size: 100% 70%;
-        margin: -1px 0px 0px 0px;
-    }
-
-    header .hero {
-        position: relative;
-        height: 100%;
-    }
-
-    header .btn-lg {
-        color: var(--orange);
-        border-radius: 0;
-        width: auto;
-        border-radius: 2px;
-    }
-
-    header .is-image-device figure {
-        width: 50%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .hero-line {
-        background-color: var(--orange);
-        width: 5%;
-        height: 10px;
-        margin: -1% 0% 0% 0%;
-    }
-
-    .hero-subtitle {
-        margin: -1% 0% 0% 0%;
-    }
-
-    .btn-learnmore {
-        color: var(--gray);
-        font-weight: bold;
-        border: 2px solid var(--orange);
-        margin-top: -2%;
-    }
-
-    .mdi-arrow-down {
-        font-size: 2rem;
-        margin-top: -1%;
-        white-space: nowrap;
-        position: absolute;
-        transform: translateY(0);
-        -webkit-transition: all 500ms ease-in-out;
-        -moz-transition: all 750ms ease-in-out;
-        -ms-transition: all 750ms ease-in-out;
-        -o-transition: all 750ms ease-in-out;
-        transition: all 750ms ease-in-out;
-    }
-
-    .lift {
-        transform: translateY(14px);
-    }
-
-    main section .columns .carousel-column {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .business-line {
-        background-color: var(--white);
-        width: 5%;
-        height: .5rem;
-        margin: -2% 0% 0% 0%;
-    }
-
-    .image .img-business {
-        width: 10rem;
-        height: auto;
-        margin-top: -3rem;
-    }
-
-    .image .img-business-second {
-        width: 15rem;
-        height: auto;
-        padding-top: 5rem;
-    }
-
-    .footer-image {
-        width: 30%;
-        height: auto;
-    }
-
-    .mdi-facebook {
-        font-size: 100%;
-    }
-
-    .mdi-instagram {
-        font-size: 100%;
-    }
-
-    .mdi-youtube {
-        font-size: 100%;
-    }
-}
+@media only screen and (min-width: 1400px) {}
 
 @media only screen and (min-width: 1800px) {
 
     html,
     body {
-        /* font-size: calc(8px + 6 * ((100vw - 320px) / 680)); */
-        font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-    }
-
-    .navbar-logo {
-        width: 80%;
-        height: auto;
-    }
-
-    .container:not(.is-max-desktop):not(.is-max-widescreen) {
-        max-width: 80%;
-    }
-
-    .mdi-account-outline {
-        font-size: 100%;
-    }
-
-    header {
-        min-height: 100vh;
-        background-image: url(../img/geofile_hero.png);
-        background-size: 100% 70%;
-        margin: -1px 0px 0px 0px;
-    }
-
-    header .hero {
-        position: relative;
-        height: 100%;
+        font-size: 16.5px;
     }
 
     header .btn-lg {
@@ -1012,86 +821,22 @@ header .is-image-device figure {
         border-radius: 2px;
     }
 
-    header .is-image-device figure {
-        width: 50%;
-        height: auto;
+    header .is-image-device img {
+        max-width: 42rem;
+        max-height: 42rem;
         object-fit: contain;
     }
 
-    .hero-line {
-        background-color: var(--orange);
-        width: 5%;
-        height: 10px;
-        margin: -1% 0% 0% 0%;
-    }
-
-    .hero-subtitle {
-        margin: -1% 0% 0% 0%;
-    }
-
-    .btn-learnmore {
-        color: var(--gray);
-        font-weight: bold;
-        border: 2px solid var(--orange);
-        margin-top: -2%;
-    }
-
-    .mdi-arrow-down {
-        font-size: 2rem;
-        margin-top: -1%;
-        white-space: nowrap;
-        position: absolute;
-        transform: translateY(0);
-        -webkit-transition: all 500ms ease-in-out;
-        -moz-transition: all 750ms ease-in-out;
-        -ms-transition: all 750ms ease-in-out;
-        -o-transition: all 750ms ease-in-out;
-        transition: all 750ms ease-in-out;
-    }
-
-    .lift {
-        transform: translateY(14px);
-    }
-
-    main section .columns .carousel-column {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .business-line {
-        background-color: var(--white);
-        width: 5%;
-        height: .5rem;
-        margin: -2% 0% 0% 0%;
-    }
-
     .image .img-business {
-        width: 10rem;
+        width: 13rem;
         height: auto;
         margin-top: -3rem;
     }
 
     .image .img-business-second {
-        width: 15rem;
+        width: 18rem;
         height: auto;
-        padding-top: 5rem;
-    }
-
-    .footer-image {
-        width: 30%;
-        height: auto;
-    }
-
-    .mdi-facebook {
-        font-size: 100%;
-    }
-
-    .mdi-instagram {
-        font-size: 100%;
-    }
-
-    .mdi-youtube {
-        font-size: 100%;
+        padding-top: 7rem;
     }
 }
 
@@ -1099,11 +844,7 @@ header .is-image-device figure {
 
     html,
     body {
-        /* font-size: 48px; */
-        /* font-size: 1.2vw; */
-        /* font-size: calc(16px + 6 * ((100vw - 320px) / 680)); */
-        font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-
+        font-size: 48px;
     }
 
     .navbar-logo {
